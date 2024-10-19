@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    position: relative;
+}
+#landing-page{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#landing-page img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#signin-page{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    transform: translate(-50%, -50%);
+    padding: 4vw 4vw;
+    background-color: #dadada83;
+    border-radius: 15px;
+    /* display: none; */
+}
+#signin-page h1{
+    color: #5e3b25;
+    margin-bottom: 2.5vw;
+    font-size: 2.5vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+#signin-page form input{
+    display: block;
+    width: 100%;
+    padding: 1vw 3vw;
+    margin-bottom: 1vw;
+    background-color: #e3e3e3;
+    border: none;
+    border-radius: 8px;
+    font-size: 1vw;
+}
+#forgot {
+    text-align: right;
+    margin-bottom: 2vw;
+}
+
+#forgot a {
+    color: #411210;
+    font-weight: 600;
+    text-decoration: none;
+}
+#signin-page button {
+    margin-left: 2.5vw;
+    background-color: #5e3b25;
+    color: white;
+    padding: 1vw 7vw;
+    border: none;
+    border-radius: 50px;
+    font-size: 1vw;
+    cursor: pointer;
+}
+#signin-page button:hover {
+    background-color: #4b2f1f;
+}
+#signin-page p {
+    margin-top: 20px;
+    margin-left: 3vw;
+    color: #5e3b25;
+}
+
+#signin-page p a {
+    color: #812b27;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#signin-page p a:hover {
+    text-decoration: underline;
+}
