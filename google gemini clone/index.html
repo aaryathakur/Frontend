@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gemini AI Clone – A sleek, fully functional AI chatbot powered by Google Gemini API. Ask anything and get intelligent responses instantly.">
+    <title>Gemini AI – Chat Interface</title>
+
+    <!-- Highlight.js for code syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <!-- Boxicons for UI icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar__brand">
+            <span class="navbar__star">✦</span>
+            <h3 class="navbar__logo">Gemini</h3>
+        </div>
+        <div class="navbar__actions">
+            <button class="navbar__button" id="themeToggler" aria-label="Toggle theme" title="Toggle light/dark mode">
+                <i class='bx bx-sun'></i>
+            </button>
+            <button class="navbar__button" id="newChatButton" aria-label="New chat" title="Start a new chat">
+                <i class='bx bx-edit'></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== WELCOME HEADER (shown before any chat) ===== -->
+    <header class="header" role="banner">
+        <div class="header__title">
+            <h1>Hello, there! <span class="header__wave">👋</span></h1>
+            <h2>How can I help you today?</h2>
+        </div>
+
+        <!-- Suggestion Cards -->
+        <div class="suggests" role="list" aria-label="Suggested prompts">
+            <div class="suggests__item" role="listitem" tabindex="0"
+                aria-label="Suggestion: Give tips on helping kids finish their homework on time">
+                <p class="suggests__item-text">Give tips on helping kids finish their homework on time</p>
+                <div class="suggests__item-icon"><i class='bx bx-stopwatch'></i></div>
+            </div>
+            <div class="suggests__item" role="listitem" tabindex="0"
+                aria-label="Suggestion: Help me write an out-of-office email">
+                <p class="suggests__item-text">Help me write an out-of-office email</p>
+                <div class="suggests__item-icon"><i class='bx bx-edit-alt'></i></div>
+            </div>
+            <div class="suggests__item" role="listitem" tabindex="0"
+                aria-label="Suggestion: Give me phrases to learn a new language">
+                <p class="suggests__item-text">Give me phrases to learn a new language</p>
+                <div class="suggests__item-icon"><i class='bx bx-compass'></i></div>
+            </div>
+            <div class="suggests__item" role="listitem" tabindex="0"
+                aria-label="Suggestion: Show me something to build by hand">
+                <p class="suggests__item-text">Show me something cool to build by hand</p>
+                <div class="suggests__item-icon"><i class='bx bx-wrench'></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== CHAT MESSAGES AREA ===== -->
+    <section class="chats" id="chatContainer" role="log" aria-live="polite" aria-label="Chat messages"></section>
+
+    <!-- ===== PROMPT INPUT AREA ===== -->
+    <section class="prompt" role="complementary" aria-label="Message input">
+        <form action="#" class="prompt__form" id="messageForm" novalidate>
+            <div class="prompt__input-wrapper">
+                <textarea placeholder="Ask Gemini anything..." class="prompt__form-input" id="promptInput" rows="1"
+                    aria-label="Type your message" required></textarea>
+                <button class="prompt__form-button" id="sendButton" type="submit" aria-label="Send message"
+                    title="Send">
+                    <i class='bx bx-send'></i>
+                </button>
+                <button class="prompt__form-button" id="deleteButton" type="button" aria-label="Clear chat history"
+                    title="Clear chat">
+                    <i class='bx bx-trash'></i>
+                </button>
+            </div>
+        </form>
+        <p class="prompt__disclaim">
+            Gemini may display inaccurate info, including about people, so double-check its responses.
+        </p>
+    </section>
+
+    <!-- ===== SCRIPTS ===== -->
+    <!-- Marked.js: Markdown → HTML parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/lib/marked.umd.min.js"></script>
+    <!-- Highlight.js: Code syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <!-- API Key (edit GOOGLE_API_KEY.js to set your key) -->
+    <script src="GOOGLE_API_KEY.js"></script>
+    <!-- Main application logic -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

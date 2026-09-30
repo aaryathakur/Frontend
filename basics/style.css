@@ -18,6 +18,7 @@ nav{
     width: 100% ;
     padding: 50px 30px;
     background-color: rgba(247, 200, 200, 0.872);
+    color: #f08a83;
 }
 
 header{
@@ -64,4 +65,8 @@ video{
     transform: translate(-50% , - 50%);
     width: 50%;
     height: 100%;
+}
+
+#audio {
+    
 }

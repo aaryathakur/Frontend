@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Gilroy-Regular;
+  box-sizing: border-box;
+  color: white;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(26, 23, 23);
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 30px;
+}
+
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+#nav h3 {
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#main h1 {
+  font-size: 150px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 120px;
+  /* background-color: red; */
+  width: 80%;
+  margin-left: 10%;
+  position: relative;
+  z-index: 9;
+
+}
+
+#main h1:nth-child(2) {
+  margin-top: 180px;
+}
+
+#main h1:nth-child(3) {
+  text-align: center;
+}
+
+#main h1:nth-child(4) {
+  text-align: center;
+}
+
+img{
+    height: 400px;
+    position: absolute;
+    top: 12%;
+    left:40%;
+}
+
+#img1{
+    rotate: 20deg;
+}
+
+#img2{
+    rotate: 16deg;
+}
+
+#img3{
+    rotate: 12deg;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 0; 
+    width: 100%; 
+    padding: 20px 0; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: center; 
+    text-transform: uppercase;
+  }
+  
+  #bottom h3:first-child {
+    margin-left: 30px; /* Adjust left margin to position the first text at the left */
+  }
+  
+  #bottom h3:nth-child(2) {
+    flex-grow: 1; /* This will make the second h3 grow and push to the center */
+    text-align: center; /* Center the second text */
+    margin-right: 30px; /* Add margin on the right if necessary */
+  }
+  
+  #bottom h3 {
+    font-size: 18px; /* Adjust font size as needed */
+    color: #fff; /* White color for the text */
+    font-weight: 300; /* Lighter font weight for both h3 elements */
+  }
